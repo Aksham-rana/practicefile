@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>practice file</title>
+    <style>
+        .div1{
+            display: grid;
+            height: 100px;
+            grid-template-columns: 1fr 2fr 3fr;
+        }
+
+        .div2{
+            margin-top: 20px;
+            height: 200px;
+            width: 800px;
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        .div2-2{
+            display: flex;
+            flex-direction: column; 
+        }
+        
+    </style>
+    <body>
+        <span>Grid</span>
+        <div class="div1">
+            <div style="background-color: lightblue;"> div1</div>
+            <div style="background-color: pink;"> div2</div>
+            <div style="background-color: lightblue;"> div3</div>
+        </div>
+
+
+        <div class="div2">
+            <div class="div2-2" style="background-color: pink; flex-grow: 1;">
+                <div style="background-color: yellow;">nested flex1</div>
+                <div style="background-color: greenyellow;">nested flex2<div>abcd</div></div>
+            </div>
+            <div style="background-color: lightblue; flex-grow: 5;">div</div>
+            <div style="background-color: pink; flex-grow: 10;">div</div>
+        </div>
+
+        
+
+    </body>
+</head>
